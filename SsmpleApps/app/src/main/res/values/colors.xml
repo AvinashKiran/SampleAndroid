@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Default Android Colors -->
+
+    <color name="white">@android:color/white</color>
+    <color name="black">@android:color/black</color>
+    <color name="darker_gray">@android:color/darker_gray</color>
+
+    <!-- Custom Colors -->
+
+    <color name="transparent">#00000000</color>
+    <color name="whitecolor">#FFFFFF</color>
+    <color name="semi_transparent">#80000000</color>
+    <color name="red">#FF0000</color>
+    <color name="light_red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="signupbg">#F2F2F2</color>
+    <color name="loginbuttongreen">#3ebf0a</color>
+    <color name="loginbuttongreenhover">#38831a</color>
+    <color name="skyblue">#02daf5</color>
+    <color name="graywhite">#e9e7e7</color>
+    <color name="bluetext">#0288f2</color>
+    <color name="buttonsborder">#828282</color>
+    <color name="grayborder">#c0c0c0</color>
+    <color name="graychars">#828282</color>
+    <color name="blackshadebg">#2B2A2A</color>
+    <color name="blockbutton">#db1718</color>
+    <color name="blockbutton_h">#a90e0f</color>
+    <color name="blacktopbar">#2B2828</color>
+    <color name="drawer_delimiter">#0DFFFFFF</color>
+    <color name="app_color">#0089ad</color>
+    <color name="bottom_color">#efefef</color>
+    <color name="line_color">#EBEBEB</color>
+    <color name="yellow">#f1bb01</color>
+    <color name="orange_end">#f39400</color>
+    <color name="blue_start">#0054a6</color>
+    <color name="blue_end">#009dda</color>
+    <color name="red_start">#a32322</color>
+    <color name="red_end">#c34538</color>
+    <color name="green_start">#4ba322</color>
+    <color name="green_end">#64c238</color>
+    <color name="hover_start">#b7b7b7</color>
+    <color name="hover_end">#8a8a8a</color>
+    <color name="btn_border_start">#303030</color>
+    <color name="btn_border_center">#404040</color>
+    <color name="btn_border_end">#353535</color>
+    <color name="semitransparent">#33000000</color>
+    <color name="blue_font">#65b3ef</color>
+    <color name="blue_font_h">#dddddd</color>
+    <color name="common_bg">#e5e5e5</color>
+    <color name="common_gray_bg">#EDEDED</color>
+    <color name="dark_gray">#555555</color>
+    <color name="grid_bg">#E9F1F5</color>
+    <color name="grid_bg_divider">#366FB3</color>
+    <color name="black_semitransparent">#BB000000</color>
+    <color name="transparent_semi">#CC000000</color>
+    <!-- Home -->
+    <color name="app_font">#1369B3</color>
+    <color name="app_black_font">#363636</color>
+    <color name="blue_font_1">#222472</color>
+
+    <!-- New Design Colors -->
+    <color name="blue_border_line">#0054a3</color>
+    <color name="gray_button_hover">#808080</color>
+    <color name="tab_color">#f2f2f2</color>
+    <color name="green_bull_color">#3ebf0c</color>
+    <color name="red_bear_color">#dd1718</color>
+
+    <drawable name="background_drawable">#f2f2f2</drawable>
+
+    <color name="menu_box_hover_color">#CD1D5991</color>
+    <color name="orange">#f79321</color>
+    <color name="grey">#808080</color>
+    <color name="slider_color">#808080</color>
+    <color name="groups_color">#d9d9d9</color>
+    <color name="online_color">#95BF43</color>
+    <color name="away_color">#E3BA33</color>
+    <color name="busy_color">#F05123</color>
+    <color name="offline_color">#808080</color>
+    <color name="invisible_color">#FFFFFF</color>
+    <color name="invisible_grey_color">#808080</color>
+    <color name="pink">#EC016D</color>
+    <color name="pinkdark">#E03E82</color>
+    <color name="blue_dark">#8235C2</color>
+    <color name="blue_dark_transparent">#808235C2</color>
+    <color name="pink_trans">#80EC016D</color>
+
+
+    <color name="fbcolor">#2D4373</color>
+    <color name="googlecolor">#C23321</color>
+
+
+    <color name="app_theme_color">#456CBB</color>
+
+    <color name="color_hint">#727272</color>
+
+    <color name="color_telecom">#47455F</color>
+    <color name="color_dth">#4EA868</color>
+    <color name="color_financial_services">#435886</color>
+    <color name="color_personal_services">#885CA8</color>
+
+    <color name="color_banner">#D3EAEB</color>
+    <color name="color_banner_text">#043A48</color>
+
+    <color name="color_post_paid_connection">#4A485E</color>
+    <color name="color_post_paid_bill_pay">#42BD8D</color>
+    <color name="color_prepaid_recharge">#435C87</color>
+    <color name="color_broadband_connection">#9368AB</color>
+
+    <color name="color_service_provider">#D3D3D3</color>
+
+    <color name="color_postpaid_selected">#133260</color>
+    <color name="color_postpaid_normal">#324977</color>
+    <color name="color_postpaid_mnp">#ECE6D2</color>
+    <color name="color_postpaid_mnp_text">#7B7064</color>
+    <color name="color_proceed">#F2652E</color>
+
+    <color name="color_plan_backgroud">#E0D6C0</color>
+
+    <color name="color_plan_item">#F3EFDD</color>
+    <color name="color_plan_divider">#A19280</color>
+
+    <color name="color_company_title">#534A41</color>
+    <color name="color_service_provider_normal">#DED2BC</color>
+
+    <color name="color_upload_doc">#EEE8D5</color>
+    <color name="color_upload_doc_hint">#73685C</color>
+
+    <color name="color_dth_new_connection">#4B527C</color>
+    <color name="color_dth_service_provider_border">#E9E9E9</color>
+
+    <color name="color_insurance">#E99349</color>
+    <color name="color_prepaid_new_connection">#D2599D</color>
+    <color name="color_bulk_connections">#C69435</color>
+    <color name="color_grey">#4D4D4D</color>
+
+    <color name="color_created">#f2c100</color>
+    <color name="color_phone_verification">#ffa500</color>
+    <color name="color_processed">#ffb6c1</color>
+    <color name="color_approved">#31b600</color>
+    <color name="color_shipping">#008000</color>
+    <color name="color_delivered">#005a00</color>
+    <color name="color_cancelled">#d6d50000</color>
+
+    <color name="color_not_assigned">#c0c0c0</color>
+
+    <color name="success_toast">#ddf0da</color>
+    <color name="failure_toast">#f3dedf</color>
+    <color name="success_toast_msg">#2b6736</color>
+    <color name="failure_toast_msg">#912416</color>
+</resources>

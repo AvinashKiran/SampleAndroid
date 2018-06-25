@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SampleSideMenu</string>
+    <string name="inner_frag">InnerFragment</string>
+</resources>
