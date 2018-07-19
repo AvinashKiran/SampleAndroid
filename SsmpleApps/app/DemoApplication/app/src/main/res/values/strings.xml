@@ -1,0 +1,177 @@
+<resources>
+    <string name="app_name">DemoApplication</string>
+    <string name="bottom_nav_timer">Timer</string>
+    <string name="bottom_nav_meeting">Meeting</string>
+    <string name="bottom_nav_videos">Videos</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="the_current_time_is">The Current Time is</string>
+    <string name="schedule_meeting_text">Schedule speedy meetings with either 25- or -50-
+    min sessions. 30-min meetings end 5 min early, 1 hour and longer meetings end 10 min early</string>
+    <string name="alert_text">You will get pop-up alerts before the meetings ends,
+    and a final buzzer when it's time to wrap up.</string>
+
+    <string name="custom_picker_msg">Each meeting timer session wil include alerts at
+    both 10 and 5 minutes before time is up, and the final buzzer will sound when it's time
+    to wrap up.</string>
+    <string name="timer">Timer</string>
+    <string name="meeting">Meeting</string>
+    <string name="videos">Videos</string>
+    <string name="schedule_message">Select the time your meeting scheduled to end :</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+
+    <string name="end_meeting">END MEETING</string>
+    <string name="start_meeting">START MEETING</string>
+    <string name="or_set_your_own_custom_timer">or SET YOUR OWN CUSTOM TIMER</string>
+    <string name="meeting_in_progress">Meeting In Progress</string>
+    <string name="ends_at_9_50_pm_on_12th_jul_2018">Ends at 9.50 PM on 12th Jul, 2018</string>
+
+
+    <string name="action_settings">Settings</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="default_gallery_storage">My Videos</string>
+    <string name="title_auto_upload">Auto upload</string>
+    <string name="summary_upload_over_wifi">Upload the videos when wifi is available</string>
+    <string name="title_upload_quality">Upload Quality</string>
+    <string name="summary_upload_video_quality">Specify video quality for uploads</string>
+    <string name="pref_title_notifications">Notifications</string>
+    <string name="summary_choose_ringtone">Choose notification sound</string>
+    <string name="pref_header_about">About</string>
+    <string name="summary_about">We are a team of like-minded people, specialized in development of Android App Development creating new trends across the app space. Glad to Help in anyway!</string>
+
+    <string name="summary_support">Got any queries? We are happy to help!</string>
+    <string name="title_send_feedback">Send Feedback</string>
+    <string name="title_faq">FAQ</string>
+    <string name="summary_faq">View frequently asked questions</string>
+    <string name="url_faq">https://www.androidhive.info/privacy-policy/</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="url_privacy">https://www.androidhive.info/privacy-policy/</string>
+    <string name="title_terms">Terms &amp; Conditions</string>
+    <string name="url_terms">https://www.androidhive.info/terms-of-service/</string>
+
+    <string name="choose_email_client">Choose email client</string>
+    <string name="title_gallery_storage">Default Storage</string>
+    <string name="title_new_notification_sound">New message notification</string>
+    <string name="title_vibrate">Vibrate</string>
+    <string name="summary_vibrate">Vibrate on new notification</string>
+    <string name="key_upload_over_wifi">key_upload_over_wifi</string>
+    <string name="key_gallery_name">key_gallery_name</string>
+    <string name="key_upload_quality">key_upload_quality</string>
+    <string name="key_enable_sound">key_enable_sound</string>
+    <string name="key_enable_vibration">key_enable_vibration</string>
+    <string name="key_screen_auto_lock">key_screen_auto_lock</string>
+    <string name="key_speedy_meetings">key_speedy_meetings</string>
+    <string name="key_write_a_review">key_write_a_review</string>
+    <string name="key_report_an_issue">key_report_an_issue</string>
+    <string name="key_about">key_about</string>
+
+    <string name="dbs_copy">\u00A9 2018 DBS</string>
+    <string name="app_version">Version 1.0</string>
+
+    <string name="key_vibrate">key_vibrate</string>
+    <string name="key_send_feedback">key_send_feedback</string>
+    <string name="pref_alerts">ALERTS</string>
+    <string name="pref_enable_sound">Enable Sound</string>
+
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Introducing\nMeeting MOJO!</string>
+    <string name="slide_1_desc">At DBS, we have Meeting MOJO, a bank-wide movement to run effective meetings.
+    It helps us to make the best use of possible of everyone\'s time.The MO (Meeting Owner) runs good meetings
+    and the JO (Joyful Observer) is committed to give honest feedback </string>
+
+    <string name="slide_2_title">Schedule\nSpeedy Meetings</string>
+    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+
+    <string name="slide_3_title">Stay On Track,\n End On Time</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+
+    <string name="slide_4_title">Make Every\nMeeting Count</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="title_activity_settings_pref">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="mojo">MOJO</string>
+
+</resources>

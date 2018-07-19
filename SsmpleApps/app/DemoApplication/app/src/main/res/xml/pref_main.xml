@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<PreferenceCategory android:title="General">
+        <EditTextPreference
+            android:defaultValue="@string/default_gallery_storage"
+            android:key="@string/key_gallery_name"
+            android:summary="@string/default_gallery_storage"
+            android:title="@string/title_gallery_storage" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/key_upload_over_wifi"
+            android:summary="@string/summary_upload_over_wifi"
+            android:title="@string/title_auto_upload" />
+
+        <ListPreference
+            android:defaultValue="3"
+            android:dialogTitle="@string/title_upload_quality"
+            android:entries="@array/pref_upload_quality_entries"
+            android:entryValues="@array/pref_upload_quality_values"
+            android:key="@string/key_upload_quality"
+            android:summary="@string/summary_upload_video_quality"
+            android:title="@string/title_upload_quality" />
+
+    </PreferenceCategory>-->
+
+    <PreferenceCategory android:title="@string/pref_alerts">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/key_enable_sound"
+            android:title="@string/pref_enable_sound" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/key_enable_vibration"
+            android:title="Enable Vibration" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="SCREEN AUTO LOCK">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/key_screen_auto_lock"
+            android:title="Prevent Screen Auto-Lock" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="INFORMATION">
+
+        <Preference
+            android:key="@string/key_about"
+            android:title="About" />
+
+        <Preference
+            android:key="@string/key_speedy_meetings"
+            android:title="Learn About Speedy Meetings" />
+
+        <Preference
+            android:key="@string/key_write_a_review"
+            android:title="Write A Review" />
+
+        <Preference
+            android:key="@string/key_report_an_issue"
+            android:title="Report An Issue" />
+
+
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory >
+
+        <Preference
+            android:title="@string/dbs_copy"
+            android:summary="@string/app_version"/>
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

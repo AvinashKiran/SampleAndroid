@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    android:gravity="center"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/fragment_meeting_progress_new"
+    tools:context="com.demo.android.demoapplication.TimerFragment">
+
+    <ImageView
+        android:id="@+id/image_bell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:src="@drawable/ic_bell"/>
+
+    <TextView
+        android:id="@+id/text_time_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:33:08"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="75sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:padding="16dp"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7.50"
+            android:indeterminate="false"
+            android:maxHeight="4dp"
+            android:minHeight="4dp"
+            android:max="10"
+            android:progressDrawable="@drawable/pb1_white" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.25"
+            android:indeterminate="false"
+            android:layout_marginStart="3dp"
+            android:maxHeight="4dp"
+            android:minHeight="4dp"
+            android:max="5"
+            android:progressDrawable="@drawable/pb_2_3_white" />
+
+        <ProgressBar
+            android:id="@+id/progressBar3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.25"
+            android:indeterminate="false"
+            android:maxHeight="4dp"
+            android:minHeight="4dp"
+            android:layout_marginStart="3dp"
+            android:max="5"
+            android:progressDrawable="@drawable/pb_2_3_white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_meeting_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/meeting_in_progress"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="4dp"
+        android:textSize="12sp"/>
+
+
+    <Button
+        android:id="@+id/button_end_meeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_light"
+        android:background="@drawable/custom_button_end_meeting"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="36dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/end_meeting"/>
+
+    <TextView
+        android:id="@+id/text_meeting_end_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ends_at_9_50_pm_on_12th_jul_2018"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"/>
+
+</LinearLayout>

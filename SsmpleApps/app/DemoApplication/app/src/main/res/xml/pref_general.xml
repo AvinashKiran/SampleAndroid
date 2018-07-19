@@ -1,0 +1,12 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Speedy Meetings">
+
+    <PreferenceCategory android:title="Speedy Meetings">
+
+        <Preference
+            android:title="WHAT ARE SPEEDY MEETINGS?"
+            android:summary="@string/slide_1_desc"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
