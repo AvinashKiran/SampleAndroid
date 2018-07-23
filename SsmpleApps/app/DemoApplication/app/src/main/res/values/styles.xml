@@ -20,4 +20,9 @@
 
     </style>
 
+    <style name="PreferencesTheme">
+        <item name="android:windowBackground">@color/colorAccent</item>
+        <item name="android:background">#FFEAEAEA</item>
+    </style>
+
 </resources>

@@ -35,10 +35,10 @@ public abstract class BaseTimerContainerFragment extends Fragment {
 
 //    protected abstract Fragment getNextFragment();
 
-    protected void addFragment(int containerId, Fragment fragment) {
+    protected void addFragment(int containerId, Fragment fragment, String tag) {
 
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-        fragmentTransaction.replace(containerId, fragment);
+        fragmentTransaction.replace(containerId, fragment, tag);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }

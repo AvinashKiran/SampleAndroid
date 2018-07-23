@@ -29,6 +29,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -37,6 +38,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity  {
     private static final String TAG = SettingsActivity.class.getSimpleName();
 
     private PrefManager prefManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,13 +57,26 @@ public class SettingsActivity extends AppCompatPreferenceActivity  {
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.pref_main);
 
+            final PrefManager prefManager = new PrefManager(getActivity());
+
             SwitchPreference sound = (SwitchPreference) findPreference(getString(R.string.key_enable_sound));
             sound.setEnabled(true);
             bindPreferenceSummaryToValue(sound);
 
+            sound.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+                @Override
+                public boolean onPreferenceChange(Preference preference, Object newValue) {
+
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                        prefManager.setSoundEnable((boolean)newValue);
+                    }
+                    return true;
+                }
+            });
+
 
             SwitchPreference vibration = (SwitchPreference) findPreference(getString(R.string.key_enable_vibration));
-            vibration.setEnabled(true);
+            //vibration.setEnabled(true);
             bindPreferenceSummaryToValue(vibration);
 
 
@@ -312,13 +327,8 @@ public class SettingsActivity extends AppCompatPreferenceActivity  {
 
             if (preference instanceof SwitchPreference) {
 
-                SwitchPreference switchPreference = (SwitchPreference) preference;
-
-                if (switchPreference.isChecked()) {
-
-
-                }
-
+                ((SwitchPreference) preference).setChecked((boolean) newValue);
+               // ((BaseAdapter) getPreferenceScreen().getRootAdapter()).notifyDataSetChanged();
 
             }
             return true;

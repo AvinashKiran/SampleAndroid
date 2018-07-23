@@ -26,6 +26,7 @@ import java.util.concurrent.TimeUnit;
 public class TimeSlotsFragment extends BaseTimerContainerFragment implements TimeSlotsRecyclerAdapter.ITimeSlotListener{
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    public static final String TIME_SLOT_FRAGMENT = "TimeSlotFragment";
 
 
     // TODO: Rename and change types of parameters
@@ -99,7 +100,7 @@ public class TimeSlotsFragment extends BaseTimerContainerFragment implements Tim
                 }
                 MeetingProgressFragment progressFragment = MeetingProgressFragment.
                         newInstance(mSelectedTimeSlot.getDurationInMillis());
-                addFragment(R.id.fragment_container, progressFragment);
+                addFragment(R.id.fragment_container, progressFragment, TIME_SLOT_FRAGMENT);
             }
         });
 
@@ -117,7 +118,7 @@ public class TimeSlotsFragment extends BaseTimerContainerFragment implements Tim
             @Override
             public void onClick(View v) {
 
-                addFragment(R.id.fragment_container, new CustomTimePickerFragment());
+                addFragment(R.id.fragment_container, new CustomTimePickerFragment(), TIME_SLOT_FRAGMENT);
             }
         });
         return v;

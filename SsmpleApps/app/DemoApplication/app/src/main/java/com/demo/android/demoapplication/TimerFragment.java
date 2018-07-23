@@ -24,6 +24,7 @@ import java.util.TimerTask;
 
 public class TimerFragment extends BaseTimerContainerFragment {
 
+    public static final String TIMER_FRAGMENT = "TimerFragment";
     private AppCompatTextView text_timer;
     private AppCompatTextView text_am_pm;
 
@@ -72,7 +73,7 @@ public class TimerFragment extends BaseTimerContainerFragment {
       mButtonNext.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v) {
-            addFragment(R.id.fragment_container, TimeSlotsFragment.newInstance());
+            addFragment(R.id.fragment_container, TimeSlotsFragment.newInstance(), TIMER_FRAGMENT);
           }
       });
 

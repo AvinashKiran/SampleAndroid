@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    >
     <!--<PreferenceCategory android:title="General">
         <EditTextPreference
             android:defaultValue="@string/default_gallery_storage"
@@ -24,48 +25,65 @@
 
     </PreferenceCategory>-->
 
-    <PreferenceCategory android:title="@string/pref_alerts">
+    <!--<PreferenceCategory android:title="@string/pref_alerts"
+        android:layout="@laycustom_prefyout">-->
+
+        <com.demo.android.demoapplication.MyPreferenceCategory
+            android:title="@string/pref_alerts">
 
         <SwitchPreference
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="@string/key_enable_sound"
+            android:layout="@layout/custom_pref_switch"
             android:title="@string/pref_enable_sound" />
 
         <SwitchPreference
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="@string/key_enable_vibration"
+            android:layout="@layout/custom_pref_switch_last"
             android:title="Enable Vibration" />
+        </com.demo.android.demoapplication.MyPreferenceCategory>
 
-    </PreferenceCategory>
 
-    <PreferenceCategory android:title="SCREEN AUTO LOCK">
+    <com.demo.android.demoapplication.MyPreferenceCategory
+        android:title="SCREEN AUTO LOCK"
+       >
 
         <SwitchPreference
             android:defaultValue="true"
             android:key="@string/key_screen_auto_lock"
-            android:title="Prevent Screen Auto-Lock" />
-    </PreferenceCategory>
-    <PreferenceCategory android:title="INFORMATION">
+            android:title="Prevent Screen Auto-Lock"
+            android:layout="@layout/custom_pref_switch_last"
+            />
+    </com.demo.android.demoapplication.MyPreferenceCategory>
+
+
+    <com.demo.android.demoapplication.MyPreferenceCategory
+        android:title="INFORMATION">
 
         <Preference
             android:key="@string/key_about"
-            android:title="About" />
+            android:title="About"
+            android:layout="@layout/custom_pref"/>
 
         <Preference
             android:key="@string/key_speedy_meetings"
-            android:title="Learn About Speedy Meetings" />
+            android:title="Learn About Speedy Meetings"
+            android:layout="@layout/custom_pref"/>
 
         <Preference
             android:key="@string/key_write_a_review"
-            android:title="Write A Review" />
+            android:title="Write A Review"
+            android:layout="@layout/custom_pref"/>
 
         <Preference
             android:key="@string/key_report_an_issue"
-            android:title="Report An Issue" />
+            android:title="Report An Issue"
+            android:layout="@layout/custom_pref_last"/>
 
 
 
-    </PreferenceCategory>
+    </com.demo.android.demoapplication.MyPreferenceCategory>
 
 
     <PreferenceCategory >

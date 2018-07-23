@@ -18,6 +18,8 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.BottomSheetDialog;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
@@ -48,6 +50,7 @@ public class MeetingProgressFragment extends BaseTimerContainerFragment {
 
 
     private static final long ONE_SECOND =   1000;
+    public static final String MEETING_FRAGMENT = "meetingFragment";
 
 
 //    private  long mStartTime ;
@@ -462,9 +465,12 @@ public class MeetingProgressFragment extends BaseTimerContainerFragment {
                     .setPositiveButton("End", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-
                             cancelAllTimers();
-                            addFragment(R.id.fragment_container, new TimerFragment());
+                            FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                            fragmentTransaction.remove(MeetingProgressFragment.this);
+                            fragmentTransaction.addToBackStack(null);
+                            fragmentTransaction.commit();
+                            addFragment(R.id.fragment_container, new TimerFragment(), MEETING_FRAGMENT);
                             dialog.dismiss();
                         }
                     })
@@ -477,9 +483,12 @@ public class MeetingProgressFragment extends BaseTimerContainerFragment {
             mDialog = builder.create();
             mDialog.show();
         } else {
-            addFragment(R.id.fragment_container, new TimerFragment());
+
+            addFragment(R.id.fragment_container, new TimerFragment(), MEETING_FRAGMENT);
         }
     }
+
+
 
     private void cancelAllTimers() {
 
